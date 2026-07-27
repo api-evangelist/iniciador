@@ -1,0 +1,16 @@
+generated: '2026-07-19'
+method: searched
+source: https://status.iniciador.com.br/ ; https://api.iniciador.com.br/.well-known/openid-configuration
+versioning:
+  scheme: open-finance-brasil
+  note: >-
+    API versions follow the Open Finance Brasil regulated API specifications
+    (per-family versioning defined by the OFB standard rather than a single
+    provider-wide version string).
+status_page: https://status.iniciador.com.br
+sla:
+  note: Managed-operations SLAs are contractual (banks, PSPs, fintechs, platforms); no public SLA page located.
+deprecation:
+  policy_url: null
+  note: No public standalone deprecation policy located; deprecation follows Open Finance Brasil specification lifecycles.
+deprecated_operations: []

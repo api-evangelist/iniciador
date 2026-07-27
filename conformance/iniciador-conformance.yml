@@ -1,0 +1,39 @@
+generated: '2026-07-19'
+method: searched
+source: >-
+  https://api.iniciador.com.br/.well-known/openid-configuration ;
+  https://trust.iniciador.com.br/ ; https://iniciador.com.br/
+standards:
+- id: oauth2
+  conforms: true
+  evidence: OIDC discovery advertises oauth2 flows (authorization_code, client_credentials, refresh_token) and token endpoint.
+- id: oidc
+  conforms: true
+  evidence: Published /.well-known/openid-configuration with issuer, jwks_uri, id_token response types.
+- id: fapi
+  conforms: true
+  evidence: private_key_jwt auth, PS256 request objects, PAR endpoint, mTLS certificate-bound access tokens, LoA2/LoA3 acr values (FAPI / Open Finance Brasil security profile).
+- id: open-finance-brasil
+  conforms: true
+  evidence: Registered Open Finance Brasil participant; standardized OFB scope set (accounts, consents, loans, financings, investments, exchanges); urn:brasil:openbanking acr values.
+- id: mtls
+  conforms: true
+  evidence: tls_client_certificate_bound_access_tokens = true; token/userinfo/PAR/registration served on api-mtls.iniciador.com.br.
+- id: rfc8414-oauth-authorization-server-metadata
+  conforms: true
+  evidence: /.well-known/oauth-authorization-server returns 200 authorization-server metadata.
+- id: rfc9126-pushed-authorization-requests
+  conforms: true
+  evidence: pushed_authorization_request_endpoint advertised in discovery document.
+- id: rfc9116-security-txt
+  conforms: true
+  evidence: PGP-signed /.well-known/security.txt with Contact, Policy, Canonical, Expires.
+- id: soc2
+  conforms: true
+  evidence: SOC 2 attested per trust.iniciador.com.br trust center and company site.
+- id: pci-dss
+  conforms: true
+  evidence: PCI-DSS compliance stated on iniciador.com.br.
+- id: lgpd
+  conforms: true
+  evidence: Consent-based data sharing under Brazil's LGPD via Open Finance consent flows.

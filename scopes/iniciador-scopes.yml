@@ -1,0 +1,50 @@
+generated: '2026-07-19'
+method: searched
+source: https://api.iniciador.com.br/.well-known/openid-configuration
+docs: https://docs.iniciador.com.br
+note: >-
+  Scopes are the Open Finance Brasil standardized API scope set advertised in the
+  provider's OIDC discovery document (scopes_supported). Each maps to an Open
+  Finance Brasil regulated API family.
+schemes:
+- name: OAuth2
+  source: well-known/iniciador-openid-configuration.json
+  flows:
+  - flow: authorizationCode
+    authorizationUrl: https://auth.iniciador.com.br/auth
+    tokenUrl: https://api-mtls.iniciador.com.br/token
+  - flow: clientCredentials
+    tokenUrl: https://api-mtls.iniciador.com.br/token
+scopes:
+- scope: openid
+  description: OpenID Connect authentication (subject identity).
+- scope: consents
+  description: Create and manage Open Finance consent records.
+- scope: resources
+  description: Access the consented resources list and their availability status.
+- scope: accounts
+  description: Deposit / demand and savings account data.
+- scope: credit-cards-accounts
+  description: Credit card account data, bills, and transactions.
+- scope: customers
+  description: Customer registration / identification data (personal and business).
+- scope: loans
+  description: Loan contract data.
+- scope: financings
+  description: Financing contract data.
+- scope: invoice-financings
+  description: Invoice financing (antecipacao de recebiveis) contract data.
+- scope: unarranged-accounts-overdraft
+  description: Unarranged overdraft (cheque especial nao contratado) contract data.
+- scope: credit-fixed-incomes
+  description: Credit fixed-income investment data (CDB, LCI, LCA, etc.).
+- scope: bank-fixed-incomes
+  description: Bank fixed-income investment data.
+- scope: variable-incomes
+  description: Variable-income investment data (equities, etc.).
+- scope: treasure-titles
+  description: Treasury title (Tesouro Direto) investment data.
+- scope: funds
+  description: Investment fund data.
+- scope: exchanges
+  description: Foreign exchange (cambio) operation data.

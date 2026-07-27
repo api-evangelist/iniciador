@@ -1,9 +1,32 @@
 aid: iniciador
 name: Iniciador
-description: 'Iniciador is a company surfaced as a portfolio company of prosus-ventures and added to the
-  API Evangelist network as a stub for enrichment. Sector: fintech. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: >-
+  Iniciador is a Brazilian Open Finance infrastructure company that provides the
+  regulated rails, APIs, and managed operations banks, payment institutions,
+  fintechs, and platforms use to participate in Brazil's Open Finance ecosystem.
+  It operates as a Payment Initiator (Iniciadora de Pagamentos), Data Receptor,
+  Account Holder, and Data Transmitter, reportedly processing roughly one in
+  three Pix initiations nationally and over a billion API data calls monthly.
+  Its product surface spans Pague com Seu Banco, Pix Inteligente, Pix Biometria,
+  Pix Automatico, Pix por Aproximacao, agentic payments, and data products such
+  as real-time Dados Bancarios and Cadastro Expresso one-click onboarding. The
+  platform is a FAPI / Open Finance Brasil OAuth2 + OpenID Connect provider using
+  private_key_jwt client authentication, mTLS-bound access tokens, pushed
+  authorization requests (PAR), and PS256 signed request objects.
 url: https://raw.githubusercontent.com/api-evangelist/iniciador/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://iniciador.com.br/pt/opengraph-image
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -12,16 +35,89 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Fintech
-apis: []
+- Open Finance
+- Open Banking
+- Payments
+- Pix
+- Brazil
+- FAPI
+- OAuth
+- Financial Services
+apis:
+- name: Iniciador Open Finance API
+  description: >-
+    Iniciador's regulated Open Finance Brasil API surface for payment initiation
+    and financial data sharing (accounts, credit cards, loans, financings,
+    investments, exchanges, and more), authorized via FAPI-secured OAuth2/OIDC
+    with private_key_jwt, mTLS-bound tokens, and pushed authorization requests.
+  humanURL: https://docs.iniciador.com.br
+  baseURL: https://api.iniciador.com.br
+  tags:
+  - Open Finance
+  - Payments
+  - Pix
+  - FAPI
+  properties:
+  - type: Authentication
+    url: authentication/iniciador-authentication.yml
+  - type: OAuthScopes
+    url: scopes/iniciador-scopes.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: TrustCenter
+  url: security/iniciador-trust-center.yml
 - type: Website
   url: https://iniciador.com.br
+- type: DeveloperPortal
+  url: https://docs.iniciador.com.br
+- type: Documentation
+  url: https://docs.iniciador.com.br
+- type: APIReference
+  url: https://docs.iniciador.com.br
+- type: Login
+  url: https://accounts.iniciador.com.br/sign-in
+- type: TermsOfService
+  url: https://iniciador.com.br/iniciador-politica-privacidade-termos.pdf
+- type: PrivacyPolicy
+  url: https://iniciador.com.br/iniciador-politica-privacidade-termos.pdf
+- type: StatusPage
+  url: https://status.iniciador.com.br
+- type: Compliance
+  url: security/iniciador-trust-center.yml
+- type: Security
+  url: https://iniciador.com.br/.well-known/security.txt
+- type: SecurityTxt
+  url: well-known/iniciador-security.txt
+- type: VulnerabilityDisclosure
+  url: security/iniciador-vulnerability-disclosure.yml
+- type: WellKnown
+  url: well-known/iniciador-well-known.yml
+- type: Authentication
+  url: authentication/iniciador-authentication.yml
+- type: OAuthScopes
+  url: scopes/iniciador-scopes.yml
+- type: Conformance
+  url: conformance/iniciador-conformance.yml
+- type: DomainSecurity
+  url: security/iniciador-domain-security.yml
+- type: Lifecycle
+  url: lifecycle/iniciador-lifecycle.yml
+- type: LLMsTxt
+  url: llms/iniciador-llms.txt
+- type: LinkedIn
+  url: https://www.linkedin.com/company/iniciador1
+- type: YouTube
+  url: https://www.youtube.com/@IniciadorOF
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

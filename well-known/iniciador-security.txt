@@ -1,0 +1,16 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Contact: mailto:security@iniciador.com.br
+Expires: 2031-01-01T02:59:00.000Z
+Encryption: openpgp4fpr:367c31a835ce623dc39ad2ff97453c27c32f5725
+Preferred-Languages: pt-BR,en,es
+Canonical: https://iniciador.com.br/.well-known/security.txt
+Policy: https://iniciador.com.br/disclosure-policy.html
+-----BEGIN PGP SIGNATURE-----
+
+iHUEARYKAB0WIQQ2fDGoNc5iPcOa0v+XRTwnwy9XJQUCaKy7ugAKCRCXRTwnwy9X
+JVDJAQDB9/lcr11DoDZ/F2LU/Wk7f7M1I6puTGsBXszNtm30EgEAgRGFhZtgX3XQ
+UN9ruUh/GWY9UciO5TjELjshp5f5gQ4=
+=Avcn
+-----END PGP SIGNATURE-----

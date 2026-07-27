@@ -1,0 +1,40 @@
+generated: '2026-07-19'
+method: searched
+source: live probes of provider hosts
+hosts:
+- host: https://iniciador.com.br
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: iniciador-security.txt
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+- host: https://api.iniciador.com.br
+  documents:
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: iniciador-openid-configuration.json
+    note: FAPI / Open Finance Brasil OIDC discovery document
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    file: iniciador-oauth-authorization-server.json
+    note: RFC 8414 authorization-server metadata (identical payload to openid-configuration)
+  - path: /jwks
+    status: 200
+    note: JWKS endpoint (application/jwk-set+json) referenced by jwks_uri
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+- host: https://portal.iniciador.com.br
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404

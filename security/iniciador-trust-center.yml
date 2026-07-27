@@ -1,0 +1,12 @@
+generated: '2026-07-19'
+method: searched
+probe: true
+source: https://trust.iniciador.com.br/
+url: https://trust.iniciador.com.br/
+certifications:
+- SOC 2
+evidence:
+- source: https://trust.iniciador.com.br/
+  keywords:
+  - soc 2
+  - trust center
