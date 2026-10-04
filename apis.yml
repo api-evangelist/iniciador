@@ -57,7 +57,7 @@ tags:
 - Brazil
 - FAPI
 - Authentication
-- Financial-Services
+- Financial Services
 tags_raw:
 - Company
 - Fintech
@@ -69,6 +69,7 @@ tags_raw:
 - FAPI
 - OAuth
 - Financial Services
+- Financial-Services
 apis:
 - name: Iniciador Open Finance API
   description: >-
