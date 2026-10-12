@@ -1,0 +1,46 @@
+generated: '2026-10-12'
+method: searched
+source:
+- https://zapier.com/apps/iniciador/integrations
+- https://n8n.io/integrations/iniciador/
+- https://composio.dev/toolkits/iniciador
+- https://monid.ai/tools/iniciador
+checked:
+- https://composio.dev/toolkits/iniciador
+- https://data.directory.openbankingbrasil.org.br/participants
+- https://monid.ai/tools/iniciador
+- https://n8n.io/integrations/iniciador/
+- https://zapier.com/apps/iniciador/integrations
+summary: null
+marketplace_apps: []
+edges:
+- partner_name: Open Finance Brasil
+  partner: null
+  type: contract
+  channel: regulator-register
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://data.directory.openbankingbrasil.org.br/participants
+  contract_reference:
+    register: Open Finance Brasil directory (Banco Central do Brasil)
+    spec_file: null
+    role: participant
+    registered_name: Iniciador Instituicao de Pagamento Ltda
+    register_id: 0e5ae3f4-ad98-4b40-b603-d9fed2a5f89b
+    matched_domain: iniciador.com.br
+    api_families:
+    - admin
+    - channels_banking-agents
+    - channels_branches
+    - channels_electronic-channels
+    - channels_phone-channels
+    - channels_shared-automated-teller-machines
+    - consents
+    - customers-business
+    - customers-personal
+    - discovery_outages
+    - discovery_status
+    - resources
+    detected_by: sweep-standard-registers.py
+    detected: '2026-10-12'
+templates: []
