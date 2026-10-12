@@ -35,3 +35,28 @@
     detected: '2026-10-12'
   status: not-a-workflow
   arazzo: null
+- slug: iniciador-openid-foundation-certification
+  label: OpenID Foundation certification
+  partner_name: OpenID Foundation certification
+  type: contract
+  channel: network-directory
+  evidence: https://openid.net/developers/certified-openid-connect-implementations/
+  source: edge
+  relationship: standard-participant
+  contract_reference:
+    register: OpenID Foundation certified implementations
+    spec_file: null
+    role: certified-rp
+    registered_name: Iniciador – Platform para Iniciadores
+    products:
+    - Iniciador – ITP SaaS v1.0.0
+    matched_domain: iniciador.com.br
+    api_families:
+    - BR-OB Adv. RP w/ MTLS
+    - BR-OB Adv. RP w/ Private Key
+    - fapi1-rp-brazil-open-banking
+    api_families_basis: conformance profiles / certification levels passed
+    detected_by: sweep-identity.py
+    detected: '2026-10-13'
+  status: not-a-workflow
+  arazzo: null
