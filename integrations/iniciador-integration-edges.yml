@@ -15,6 +15,31 @@ checked:
 summary: null
 marketplace_apps: []
 edges:
+- partner_name: OpenID Foundation certification
+  partner: null
+  partner_match: domain
+  type: contract
+  channel: network-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://openid.net/developers/certified-openid-connect-implementations/
+  contract_reference:
+    register: OpenID Foundation certified implementations
+    spec_file: null
+    role: certified-rp
+    registered_name: Iniciador – Platform para Iniciadores
+    products:
+    - Iniciador – ITP SaaS v1.0.0
+    matched_domain: iniciador.com.br
+    api_families:
+    - BR-OB Adv. RP w/ MTLS
+    - BR-OB Adv. RP w/ Private Key
+    - fapi1-rp-brazil-open-banking
+    api_families_basis: conformance profiles / certification levels passed
+    detected_by: sweep-identity.py
+    detected: '2026-10-13'
+  detected_by: sweep-identity.py
+  detected: '2026-10-13'
 - partner_name: Open Finance Brasil
   partner: null
   type: contract
@@ -43,30 +68,5 @@ edges:
     - discovery_status
     - resources
     detected_by: sweep-standard-registers.py
-    detected: '2026-10-12'
-- partner_name: OpenID Foundation certification
-  partner: null
-  partner_match: domain
-  type: contract
-  channel: network-directory
-  relationship: standard-participant
-  direction: partner-built
-  evidence: https://openid.net/developers/certified-openid-connect-implementations/
-  contract_reference:
-    register: OpenID Foundation certified implementations
-    spec_file: null
-    role: certified-rp
-    registered_name: Iniciador – Platform para Iniciadores
-    products:
-    - Iniciador – ITP SaaS v1.0.0
-    matched_domain: iniciador.com.br
-    api_families:
-    - BR-OB Adv. RP w/ MTLS
-    - BR-OB Adv. RP w/ Private Key
-    - fapi1-rp-brazil-open-banking
-    api_families_basis: conformance profiles / certification levels passed
-    detected_by: sweep-identity.py
-    detected: '2026-10-13'
-  detected_by: sweep-identity.py
-  detected: '2026-10-13'
+    detected: '2026-10-14'
 templates: []
