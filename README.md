@@ -64,6 +64,98 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Iniciador is a company surfaced as a portfolio company of prosus-ventures and added to the API Evangelist network as a stub for enrichment. Sector: fintech. This profile is a lead awaiting the enrichment pipeline.
+Iniciador is a Brazilian Open Finance infrastructure company that provides the regulated rails, APIs, and managed operations banks, payment institutions, fintechs, and platforms use to participate in Brazil's Open Finance ecosystem. It operates as a Payment Initiator (Iniciadora de Pagamentos), Data Receptor, Account Holder, and Data Transmitter, reportedly processing roughly one in three Pix initiations nationally and over a billion API data calls monthly. Its product surface spans Pague com Seu Banco, Pix Inteligente, Pix Biometria, Pix Automatico, Pix por Aproximacao, agentic payments, and data products such as real-time Dados Bancarios and Cadastro Expresso one-click onboarding. The platform is a FAPI / Open Finance Brasil OAuth2 + OpenID Connect provider using private_key_jwt client authentication, mTLS-bound access tokens, pushed authorization requests (PAR), and PS256 signed request objects.
 
-Backed by: prosus-ventures — https://iniciador.com.br
+**Areas:** Company · Fintech · Open Finance · Open Banking · Payments · Pix · Brazil · FAPI · Authentication · Financial Services
+
+## Iniciador on APIs.io
+
+Everything profiled for Iniciador is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/iniciador/](https://apis.io/providers/iniciador/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Iniciador Open Finance API](https://apis.io/apis/iniciador/iniciador-open-finance-api/) — Iniciador's regulated Open Finance Brasil API surface for payment initiation and financial data sharing (accounts, credit cards, loans, financings,…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (4)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Iniciador Authentication](https://apis.io/security/iniciador/iniciador-authentication/)
+- [Iniciador Domain Security](https://apis.io/security/iniciador/iniciador-domain-security/)
+- [Iniciador Trust Center](https://apis.io/security/iniciador/iniciador-trust-center/)
+- [Iniciador Vulnerability Disclosure](https://apis.io/security/iniciador/iniciador-vulnerability-disclosure/)
+
+#### OAuth scopes (1)
+
+The permissions the API asks for.
+
+- [Iniciador Scopes](https://apis.io/scopes/iniciador/iniciador-scopes/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://iniciador.com.br)
+- [Documentation](https://docs.iniciador.com.br)
+- [API reference](https://docs.iniciador.com.br)
+- [Security](https://iniciador.com.br/.well-known/security.txt)
+- [Terms of service](https://iniciador.com.br/iniciador-politica-privacidade-termos.pdf)
+- [Privacy policy](https://iniciador.com.br/iniciador-politica-privacidade-termos.pdf)
+- [Status](https://status.iniciador.com.br)
+
+## API Evangelist rating
+
+**Kin Score 33.1** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 18.4 |
+| Developer ergonomics | 38.1 |
+| Access clarity | 43.4 |
+
+**Agent readiness 15.1** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | served (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | served (partial credit) |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | yes |
+| Agentic Commerce | — |
+
+**Regulatory alignment 52.8** — Banking & Open Finance
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/iniciador/](https://apis.io/providers/iniciador/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Iniciador: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/iniciador/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
